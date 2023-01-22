@@ -17,6 +17,24 @@ Activate the environment
 
     conda activate HeinzTorch
 ## Training
-To train a model, run:
+To train a model from scratch, run:
 
 `python train_evaluate.py --dataset <datasetname> --num_folds 10 --device cuda:0 --epoch 150`
+
+To train a model with optimized hyperparameters,run:
+
+
+## The Results
+
+- The classification datasets.
+
+Model      | BBBP | SIDER | ClinTox | BACE | Tox21 
+----       | ---|----       |----       |----        |----            
+HMPNN|  0.935(0.017) | 0.667(0.071) | 0.927(0.029) | 0.907(0.029) | 0.837(0.011) 
+
+- The regression datasets.
+
+Model | FreeSolv | ESOL | Lipo 
+----- | ---- | ---- | ---- 
+HMPNN  | 0.986(0.171) | 0.642(0.068) |  0.582(0.014) 
+ 
