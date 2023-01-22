@@ -22,7 +22,9 @@ To train a model from scratch, run:
 `python train_evaluate.py --dataset <datasetname> --num_folds 10 --device cuda:0 --epoch 150`
 
 To train a model with optimized hyperparameters,run:
-
+```linux
+bash ./scripts/<datasetname>.sh
+```
 
 ## The Results
 
